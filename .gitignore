@@ -1,2 +1,6 @@
 /bin/
 /node_modules/
+
+# Waffle artifacts
+/build/
+/cache/
