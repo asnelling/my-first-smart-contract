@@ -9,4 +9,4 @@ This is my first Smart Contract for Ethereum using the [example code][example co
 
 TODO: add instructions here for compiling and deploying from the command line on a local dev box.
 
-For now, just copy and paste the code from [voting.sol](./voting.sol) into the online [Remix IDE](https://remix.ethereum.org/).
+For now, just copy and paste the code from [Ballot.sol](./contracts/Ballot.sol) into the online [Remix IDE](https://remix.ethereum.org/).
