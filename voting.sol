@@ -46,17 +46,20 @@ contract Ballot {
 
     // Give `voter` the right to vote on this ballot
     // May only be called by `chairperson`
-    function giveRightToVote(address voter) public {
+    function giveRightToVote(address[] calldata voters_) public {
         require(
             msg.sender == chairperson,
             "Only chairperson can give right to vote."
         );
-        require(
-            !voters[voter].voted,
-            "Voter already voted"
-        );
-        require(voters[voter].weight == 0);
-        voters[voter].weight = 1;
+
+        for (uint i = 0; i < voters_.length; i++) {
+            require(
+                !voters[voters_[i]].voted,
+                "Voter already voted"
+            );
+            require(voters[voters_[i]].weight == 0);
+            voters[voters_[i]].weight = 1;
+        }
     }
 
     /// Delegate vote to voter `to`.
