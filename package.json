@@ -1,0 +1,31 @@
+{
+  "name": "my-first-smart-contract",
+  "version": "0.0.1",
+  "description": "My first Smart Contract for Ethereum",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ethereum-waffle": "^3.2.1"
+  },
+  "scripts": {
+    "test": "waffle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asnelling/my-first-smart-contract.git"
+  },
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "cryptocurrency"
+  ],
+  "author": {
+    "name": "Addison Snelling",
+    "email": "addison@asnell.io"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/asnelling/my-first-smart-contract/issues"
+  },
+  "homepage": "https://github.com/asnelling/my-first-smart-contract#readme"
+}
